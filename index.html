@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<title></title>
+	<style>
+		table{
+			border-collapse:collapse;
+			width:100%;
+		}
+		th,td{
+			text-align:left;
+			padding:8px;
+		}
+		tr:nth-child(even){
+			background-color:#D6EEEE;
+		}
+		table,th,td{
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+		#my header {
+			backgroud-color:lightblue
+			color:black
+			padding:40px
+			text-align:center;
+		}
+		/*Style all elements with the class name"city"*/
+		.city{
+			backgroud-color:tomato
+			color:white
+			padding:10px;
+		}
+		.note{
+			font-size:120%;
+			color:red:;
+		}
+	</style>
+</head>
+<body>
+	<h2>Zebra Striped Table</h2>
+	<p>For zabra-Striped Tables,use the nth-child()selector and add a backgroud-color to all even(or odd) table rows:</p>
+	<table>
+		<tr>
+			<th>Frist Name</th>
+			<th>Last Name</th>
+			<th>Points</th>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Griffin</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>Cleveland</td>
+			<td>Brown</td>
+			<td>$250</td>
+		</tr>
+	</table>
+	<h2>Colgroup</h2>
+	<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+	<table style="width: 100%">
+		<colgroup>
+			<col span="2" style="background-color: #D6EEEE">
+		</colgroup>
+		<tr>
+			<th>MON</th>
+			<th>TUE</th>
+			<th>WED</th>
+			<th>THU</th>
+			<th>FRI</th>
+			<th>SAT</th>
+			<th>SUN</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+		</tr>
+	</table>
+	<h2>Cell That spans two columns</h2>
+	<p>To make a cell span more than one column,use the colspan attribute.</p>
+	<table style="width:100%">
+		<tr>
+			<th colspan="2">Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>43</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>57</td>
+		</tr>
+	</table>
+	<p><strong>Tip:</strong> Try to change the padding to 5px.</p>
+	<h6>A description List</h6>
+	<d1>
+		<dt>coffee</dt>
+		<dd>-black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>-White cold drink</dd>
+	</d1>
+	<h2>An ordered HTML list</h2>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+	<h1>An Unorder list</h1>
+	<u1>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</u1>
+	<h2>Unordered List with Circle Bullete</h2>
+	<u1 style="list-style-type:circle;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</u1>
+	<h4>My <span class="note">Important</span>
+	Heading</h4>
+	<p>This is some<span class="note">important</span>text.</p>
+	<h4>The id attribute</h4>
+	<p>Use Css to style an element with the id the id"myheader":</p>
+	<h1 id="myheader">My Header</h1>
+	<h2>Difference Between class and id</h2>
+	<p>A class name can be used by multiple Html elements</p>
+	<!-An element with a unique id-->
+	<h1 id="myheader">My cities</h1>
+	<button
+		on click="displayResult()">Change text</button>
+	<!-Multiple elements with same class->
+	<h2 class="city">Londom</h2>
+	<p>London is the capital of England.</p>
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France</p>
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of japan,</p>
+	<p>This is a <br> paragraph with a line break</p>
+	<a href="https://www.w3schools.com>Visit w3schools</a>"
+	<img src="images.jpg"alt="glass picture">
+	<h2>This is heading 2</h2>
+	<p>This is some text</p>
+	<hr>
+	<h3>This is heading 3</h3>
+	<p>this is some other text</p>
+	<h1 style="background-color:powerblue;">This is a heading</h1>
+	<p style="backgroud-color:tomato;">this is a paragraph.</p>
+	<p><i>This text is italic</i></p>
+    <p><sub>this is some document</sub></p>
+    <p>donot sell the <mark>milk packet</mark></p>
+    <p>The <abbr title="world health organization">who</abbr>was founded in1948.</p>
+    <p>The Html cite element defines the tittle of a work.</p>
+    <h3>HTML Iframes</h3>
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+    <p>This is an inline span <span style="border:1px solid black">Hello World</span>element inside a paragraph.</p>
+    <h1>The span element</h1>
+    <p>My mother has<span style="color:blue;font-weight:bold;">blue</span>eyes and my father has <span style="color;tomato;font-weight:bold">dark green</span>eyes.</p>
+    <iframe src="demo_iframe.htm" style="border:none;"title="iframe Example"></iframe>
+    <img src="picture.jpg" alt="image>
+    <h6>BAckgroud Image</h6>
+    <p>A backgroud image for a p element:</p>
+    <p style="backgroud-image:url('flower.jpg');">
+    	You can specify backgroud image<br>is specifiedfor a p element,<br>By default,the backgroud-image<br>will repeat itself in the direction(s)<br>where it is smaller than the element.
+    	<h1>The Vedio Element</h1>
+    	<source src="1058930630-preview.mp4" type="vedio">
+    		<footer>
+    			<p>Author:Hege Refsnes</p>
+    			<p><a
+    				href="mailto:hege@example.com">hege@example.com</a></p>
+    			</footer>
+    			<nav>
+    				<a href="/html/">HTML</a>
+    				<a href="/css/">CSS</a>
+    				<a href="/js/">JavaScript</a>
+    				<a href="/jquery/">jQuery</a>
+    			</nav>
+    			<h1>The time element</h1>
+    			<p>Open from <time>10.00</time>to<time>21.00</time>every weekday.</p>
+    			<p>I have a date on <time datetime="2008-02-14 20.00">Valentines day</time></p>.
+    			<p><b>Note:</b> The time element does not render as anything special in any of the major browser.</p>
+    			<h1>HTML Entity Example</h1>
+    			<h2>A space character:&nbsp;</h2>
+    			<h2>The less-than sign:&lt;</h2>
+    			<h2>The greater-than sign:&gt;</h2>
+    			<h2>The ampersand (and) sign: &amp;</h2>
+    			<h2>The double quote sign:  &quot;</h2>
+    			<h2>The single quote sign: &apos;</h2>
+    			<h2>The cent sign: &cent;</h2>
+    			<h2>The pound sign:&pound;</h2>
+    			<h2>The yen sign: &yen;</h2>
+    			<h2>The euro sign:&euro;</h2>
+    			<h2>The copyright sign:&copy;</h2>
+    			<h2>The registered trade mark sign:&reg;</h2>
+    			<h1>Mathmetical Symbol Example</h1>
+    			<h2>The for-all symbol: &forall;</h2>
+    			<h2>The partial differential symbol:&part;</h2>
+    			<h2>The there-exists symbol:&exist;</h2>
+    			<h2>The empty-sets symbol:&empty;</h2>
+    			<h2>The nabla symbol:&nabla;</h2>
+    			<h2>The element-of symbol:&isin;</h2>
+    			<h2>The not-an element-of symbol:&notin;</h2>
+    			<h2>The contains-a- member symbol:&ni;</h2>
+    			<h2>The product symbol:&prod;</h2>
+    			<h2>The summation symbol:&sum;</h2>
+    			<h1>-My First Emoji</h1>
+    			<p>&#128512;</p>
+    			<h1>Sized Emoji</h1>
+    			<p style="font-size:48px">&#128512;&#128516;&#128528;&#128151;&#128507;&#128508;&#128509;&#128510;&#128511;&#128513;&#123514;&#123515;&#123517;&#123525;</p>
+
+
+
+	
+	</body>
+	</html>
